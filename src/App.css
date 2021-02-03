@@ -1,0 +1,62 @@
+.orange-text{
+  color:orange;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.pink-text{
+  color:rgb(250, 15, 113);
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.blue-text{
+  color:blue;
+}
+#green-background{
+  background-color: rgba(176, 233, 62, 0.685)
+}
+#center{
+  text-align:center;
+}
+body{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(175, 187, 241);
+}
+.header{
+  width: 100%;
+  height: 75px;  
+  padding-top:30px;
+  background-image: radial-gradient(#ff1139 0%, #2f55ff 100%);
+}
+.button{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1mm;
+  border-Radius: 1mm;
+  padding-bottom: 1mm;
+  padding-top: 1mm;
+}
+.friend{
+  color:black;
+  background-image:radial-gradient(#ff1139db 0%, #2f55ff 100%);
+  border-color:blue;
+  border-radius: 10px;
+  border-style:dotted;
+  font-size: 11pt;
+  text-align: center;
+  padding: 10px;
+  margin: 5px;
+  width: 20%;
+}
+.friend-container{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+.search{
+  border: 2px solid rgb(29, 237, 60);
+  border-radius: 5px;
+  height: 30px;
+  width: 20%;
+  padding: 2px 23px 2px 30px;
+  outline: 2;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
