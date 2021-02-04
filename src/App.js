@@ -30,7 +30,7 @@ function App() {
     <p>I have a dog named {dog}</p>);
   })
   return (
-  <div>
+  <div className="dogMap">
     <p>I have {goldendoodleCount} {goldendoodleCount === 1 ? "golden doodle" : "golden doodles"}</p>
     <p>I have {goldenretriverCount} {goldenretriverCount === 1 ? "golden retreiver" : "golden reteivers"}</p>
     {dogMap}
@@ -40,7 +40,7 @@ function App() {
   const ellieList = ["from Yarmouth, Me","a sophomore","majoring in politics"];
   const ellieMap = ellieList.map((ellie) => {
     return (
-      <p>I am {ellie}</p>
+      <p className= "ellie">I am {ellie}</p>
     )
   });
   const emily = {
@@ -85,17 +85,16 @@ return (
       <div>
       <img src={butterfly} alt="butterfly"/>
       </div>
-      {dogFunction()}
+      <div className="dog-container">{dogFunction()}</div>
       <body>
         <h4 className="pink-text">I love:</h4>
         <li className="pink-text">coffee</li>
         <li className="pink-text">the beach</li>
         <li className="pink-text">my sister</li>
-      <h4>i also LOVE my friends</h4>
       <div className="friend-containter">{friendMap}</div>
       </body>
       <h4>more about me:</h4>
-      <div>{ellieMap}</div>
+      <div id="center" className="ellie-containter">{ellieMap}</div>
       <a href="https://www.bates.edu/">i go to bates!!</a>
     </div>
   );
