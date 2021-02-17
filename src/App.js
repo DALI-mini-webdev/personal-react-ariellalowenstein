@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar/Navbar";
 import butterfly from './img/pinkbutterfly.png';
 import { Component } from "react";
 import axios from 'axios'; 
+import TravelBoard from './components/TravelBoard';
+import ToDoBoard from './components/ToDoBoard';
+import firebase from'./firebase/index';
 
 class App extends Component {
   render (){
@@ -100,6 +103,7 @@ class App extends Component {
         <h4>more about me:</h4>
         <div id="center" className="ellie-containter">{ellieMap}</div>
         <a href="https://www.bates.edu/">i go to bates!</a>
+        <div> <TravelBoard/></div>
         <div>
           <h3 id="center" className="button"><button onClick = {this.fetchData}>click me for a poem</button></h3>
           {this.renderPoem()}
